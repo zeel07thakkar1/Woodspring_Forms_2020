@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>File</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://www.pharmavisionelearning.com/public/global/fonts/font-awesome/font-awesome.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<div id="stap1">
+		<div class="container mt-5 pro_div mb-5">
+				<p class="text-center font-weight-bold pt-3"> WoodSpring Brandstandard Approved Logo Key Card Order Form</p>
+
+				<form  id="save_order" action="save_order.php" method="post" accept-charset="utf-8" id="myform" enctype="multipart/form-data">
+				
+					<table class="table tbl_pro table-responsive table-bordered">
+						
+						<thead class="text-center">
+							<tr align="center">
+								<th width="35%">Select Item</th>
+								<th align="center">img</th>
+								<th>Description</th>
+								<th>Cost/PC</th>
+								<th>Qty</th>
+								<th>Total</th>
+								<th></th>
+
+							</tr>
+						</thead>
+						<tbody>
+
+							
+							<tr>
+								<td width="35%">
+									<select name="item_id[]" class="form-control item_id">
+										<option disabled selected value="">SELECT ITEM</option>
+																					<option value="1">Onity / Kaba RFID
+Key Cards 1K
+Green</option>
+																					<option value="2">Onity / Kaba RFID
+Key Cards 1K
+White</option>
+																					<option value="3">RFID 1K
+Adjustable Watch</option>
+																					<option value="4">RFID 4K
+Adjustable Watch</option>
+																					<option value="5">RFID 4K Key Fobs
+Grey or Staff Keys
+for Onity / Kaba</option>
+																				
+									</select>
+								</td>
+
+								<td><img src="http://placehold.it/120x40?text=Select" class="img-src" width="120" height="40"></td>
+
+								<td><div class="pro_desc"></div></td>
+
+								<td><span class="txt-dollar"></span><span class="pro_cost"></span></td>
+
+								<td width="8%"><input type="number" name="quantity[]" value="1" placeholder="Quantity" size="1" class="form-control pro_qty"></td>
+
+								<td><div class="total"></div></td>
+
+								<td>
+									<button type="button" class="btn btn-sm btn-danger remove_pro">-</button>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+								<td colspan="7"><button type="button" class="btn btn-success add_pro_btn">Add Product</button></td>
+								
+
+						</tfoot>
+					</table>
+					<hr>
+					<!--form----->
+					<!---row1---->
+					<div class="row form-group">
+						<div class="col-lg-4">
+							<label for="">Hotel Name </label>
+							<input type="text" name="hotel_name" value="" placeholder="Hotel Name" class="form-control">
+						</div>
+						<div class="col-lg-4">
+							<label for="">Hotel Phone</label>
+							<input type="text" name="hotel_phone" value="" placeholder="Hotel Phone" class="form-control">
+						</div>
+						<div class="col-lg-4">
+							<label for="">Hotel fax</label>
+							<input type="text" name="hotel_fax" value="" placeholder="Hotel fax" class="form-control">
+						</div>
+					</div>
+					<!--row2----->
+					<div class="row form-group">
+						<div class="col-lg-12">
+							<label for="">Hotel Address</label>
+							<textarea name="hotel_address" class="form-control" rows="5" placeholder="Hotel Address"></textarea>
+						</div>
+					</div>
+
+					<!--row3----->
+					<div class="row form-group">
+						<div class="col-lg-6">
+							<label for="">GM Name</label>
+							<input type="text" name="gm_name" value="" placeholder="GM Name" class="form-control">
+						</div>
+						<div class="col-lg-6">
+							<label for="">GM Email</label>
+							<input type="email" name="gm_email" value="" placeholder="GM Email" class="form-control">
+						</div>
+					</div>
+					<!--row4----->
+					<div class="row form-group">
+						<div class="col-lg-4">
+							<label for="">Ap Name</label>
+							<input type="text" name="ap_name" value="" placeholder="Ap Name" class="form-control">
+						</div>
+						<div class="col-lg-4">
+							<label for="">AP Phone</label>
+							<input type="text" name="ap_phone" value="" placeholder="AP Phone" class="form-control">
+						</div>
+						<div class="col-lg-4">
+							<label for="">AP Email</label>
+							<input type="email" name="ap_email" value="" placeholder="AP Email" class="form-control">
+						</div>
+					</div>
+					<!---row5---->
+					<div class="row form-group">
+						<div class="col-lg-4">
+							<label for="">RDO Name</label>
+							<input type="text" name="rdo_name" value="" placeholder="RDO Name" class="form-control">
+						</div>
+						<div class="col-lg-4">
+							<label for="">RDO Phone</label>
+							<input type="text" name="rdo_email" value="" placeholder="RDO Phone" class="form-control">
+						</div>
+						<div class="col-lg-4">
+							<label for="">#PO</label>
+							<input type="text" name="po" value="" placeholder="#po number" class="form-control">
+						</div>
+					</div>
+					
+					<p class="text-center">Prices are subject to change. Call comfirm price availability Shipping applicable sales tax </p>
+					<!------------>
+					<div class="row">
+						<div class="col-lg-11">
+							
+						</div>
+						<div class="col-lg-1">
+							<button type="button" class="btn next-btn btn-success mb-3 float-right">Next</button>
+						</div>
+						
+					</div>
+					
+
+					<input type="submit" style="display: none;" name="save_order" value="SUBMIT" class="btn btn-success mb-3">
+					
+					
+				</form>
+		</div>
+	</div>
+	<div id="stap2">
+	</div>
+
+
+
+
+
+	
+	
+</body>
+</html>
+
+<script type="text/javascript">
+		
+		jQuery(document).ready(function($) {
+
+			$("#stap2").hide();
+
+			$(document).on('click', '.next-btn', function(event) {
+				$("#save_order").submit();
+				$("#stap1").hide();
+				$("#stap2").show();
+				
+			});
+			$(document).on('click', '.edit-btn', function(event) {
+				$("#save_order").submit();
+				$("#stap1").show();
+				$("#stap2").hide();
+			});
+
+			$(document).on('click', '.send_emil_btn', function(event) {
+				event.preventDefault();
+				var order_id = $(this).attr("data-id");
+				$.ajax({
+				    type: 'POST',
+				    // make sure you respect the same origin policy with this url:
+				    // http://en.wikipedia.org/wiki/Same_origin_policy
+				    url: "save_order_email.php",
+				    data: {
+				    	order_id:order_id
+				    },
+				    success: function(data){
+				    	alert(data);
+				    	alert("send mail success");
+				    }
+			    });
+
+				
+			});
+
+
+			
+
+			$(document).on('submit', '#save_order', function(event) {
+				event.preventDefault();
+				$.ajax({
+				    type: 'POST',
+				    // make sure you respect the same origin policy with this url:
+				    // http://en.wikipedia.org/wiki/Same_origin_policy
+				    url: "save_order.php",
+				    data: $(this).serialize(),
+				    success: function(data){
+				    	$("#stap2").html(data);
+				    }
+			    });
+			});
+
+
+
+			$(document).on('click', '.add_pro_btn', function(event) {
+				
+				var tr_new=$('.tbl_pro tbody tr:first').clone();
+				$('.tbl_pro tbody:last').append(tr_new);
+				$('.tbl_pro tbody tr:last').find('.pro_desc').text('');
+				$('.tbl_pro tbody tr:last').find('.pro_cost').text('');
+				$('.tbl_pro tbody tr:last').find('.txt-dollar').text('');
+				$('.tbl_pro tbody tr:last').find('.total').text('');
+				$('.tbl_pro tbody tr:last').find('.pro_qty').val(1);
+				$('.tbl_pro tbody tr:last').find('.img-src').attr('src','http://placehold.it/120x40?text=Select');
+			});
+
+			$(document).on('keyup chnage click', '.pro_qty', function(event) {
+				var tr = $(this).parents('tr');
+				var qty = $(this).val();
+				var price = tr.find('.pro_cost').text();
+				if(price != ''){
+					var total = qty * price;
+					tr.find('.total').text("$"+total.toFixed(2));
+				}
+				
+				
+			});
+
+
+			$(document).on('click', '.remove_pro', function(event) {
+
+				var n = $(".remove_pro").length;
+          if(n > 1){
+            var tr = $(this).parents('tr');
+				 		tr.remove();
+          }else{
+						$('.tbl_pro tbody tr:last').find('.pro_desc').text('');
+						$('.tbl_pro tbody tr:last').find('.pro_cost').text('');
+						$('.tbl_pro tbody tr:last').find('.txt-dollar').text('');
+						$('.tbl_pro tbody tr:last').find('.total').text('');
+						$('.tbl_pro tbody tr:last').find('.pro_qty').val(1);
+						$('.tbl_pro tbody tr:last').find('.img-src').attr('src','http://placehold.it/120x40?text=Select');
+          }
+				 
+			});
+
+			$(document).on('click change','.item_id',function(event){
+				var tr = $(this).parents('tr');
+				var item_id = $(this).val();
+				var quntity = tr.find('.pro_qty').val();
+				$.ajax({
+				    type: 'POST',
+				    // make sure you respect the same origin policy with this url:
+				    // http://en.wikipedia.org/wiki/Same_origin_policy
+				    url: "item_tr.php",
+				    data: { 
+				        'item_id': item_id
+				    },
+				    dataType: 'JSON',
+				    success: function(data){
+				    	tr.find('.pro_desc').text(data.item_desc);
+				    	tr.find('.txt-dollar').text("$");
+				    	tr.find('.pro_cost').text(data.item_price);
+				    	tr.find('.img-src').attr('src',data.item_pic);
+				    	var total = quntity * data.item_price;
+				    	tr.find('.total').text("$"+total.toFixed(2));
+				    }
+			    });
+
+			});
+			
+		});
+	</script>
